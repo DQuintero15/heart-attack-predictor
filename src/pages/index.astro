@@ -237,15 +237,15 @@ import Layout from "../layouts/Layout.astro";
     const probabilityPercentage = (probability * 100).toFixed(2);
 
     if (probability > 0.7) {
-      riskImage.src = "/src/static/images/high_risk.webp";
+      riskImage.src = "https://res.cloudinary.com/dw0phagfd/image/upload/v1731939422/medium_risk_pjoims.webp";
       riskText.innerHTML = "Alto riesgo de ataque al corazón";
       riskImage.alt = "Alto riesgo";
     } else if (probability > 0.3) {
-      riskImage.src = "/src/static/images/medium_risk.webp";
+      riskImage.src = "https://res.cloudinary.com/dw0phagfd/image/upload/v1731939422/high_risk_qmxcf7.webp";
       riskText.innerHTML = "Riesgo moderado de ataque al corazón";
       riskImage.alt = "Riesgo moderado";
     } else {
-      riskImage.src = "/src/static/images/low_risk.webp";
+      riskImage.src = "https://res.cloudinary.com/dw0phagfd/image/upload/v1731939422/low_risk_y6abip.webp";
       riskText.innerHTML = "Bajo riesgo de ataque al corazón";
       riskImage.alt = "Bajo riesgo";
     }
